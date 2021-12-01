@@ -30,5 +30,5 @@ O modelo lógico do banco vai ficar da seguinte maneira:
 
 <img src="img/tabela.PNG"></img>
 
-Haverá duas entidades principais (Usuário e Local) e uma de apoio para normalização
+Haverá duas entidades principais (Usuário e Local)
 
