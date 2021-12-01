@@ -28,7 +28,7 @@ Acompanhe o <a href="https://github.com/users/Amorim-cyber/projects/5">Kanbam</a
 
 O modelo lógico do banco vai ficar da seguinte maneira:
 
-<img src="./img/tabela.png"/>
+<img src="img/tabela.png">
 
 Haverá duas entidades principais (Usuário e Local) e uma de apoio para normalização
 
