@@ -1,6 +1,6 @@
 package com.app.travelPointer.exceptions;
 
-import com.back.publicOffer.util.MessageUtils;
+import com.app.travelPointer.util.MessageUtils;
 
 public class NotFoundException extends RuntimeException{
 
