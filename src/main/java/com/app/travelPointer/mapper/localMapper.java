@@ -12,24 +12,24 @@ public class localMapper {
 
     public Local toEntity(LocalDTO dto) {
         Local local = new Local();
-        local.setEndereco(dto.getEndereco());
-        local.setId(dto.getId());
-        local.setIdUsuario(dto.getIdUsuario());
+        local.setEndLocal(dto.getEndLocal());
+        local.setCdLocal(dto.getCdLocal());
+        local.setCdUsuario(dto.getCdUsuario());
         local.setLatitude(dto.getLatitude());
         local.setLongitude(dto.getLongitude());
-        local.setNome(dto.getNome());
+        local.setNmLocal(dto.getNmLocal());
         local.setTipo(dto.getTipo());
         return local;
     }
 
     public LocalDTO toDto(Local local) {
         LocalDTO dto = new LocalDTO();
-        dto.setEndereco(local.getEndereco());
-        dto.setId(local.getId());
-        dto.setIdUsuario(local.getIdUsuario());
+        dto.setEndLocal(local.getEndLocal());
+        dto.setCdLocal(local.getCdLocal());
+        dto.setCdUsuario(local.getCdUsuario());
         dto.setLatitude(local.getLatitude());
         dto.setLongitude(local.getLongitude());
-        dto.setNome(local.getNome());
+        dto.setNmLocal(local.getNmLocal());
         dto.setTipo(local.getTipo());
         return dto;
     }

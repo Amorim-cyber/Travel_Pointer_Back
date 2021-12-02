@@ -9,13 +9,13 @@ public class Local {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "cd_local")
-    private Long id;
+    private Long cdLocal;
 
     @Column(name = "nm_local")
-    private String nome;
+    private String nmLocal;
 
     @Column(name = "end_local")
-    private String endereco;
+    private String endLocal;
 
     @Column(name = "latitude")
     private String latitude;
@@ -27,30 +27,30 @@ public class Local {
     private String tipo;
 
     @Column(name = "cd_usuario")
-    private Long idUsuario;
+    private Long cdUsuario;
 
-    public Long getId() {
-        return id;
+    public Long getCdLocal() {
+        return cdLocal;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setCdLocal(Long cdLocal) {
+        this.cdLocal = cdLocal;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNmLocal() {
+        return nmLocal;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNmLocal(String nmLocal) {
+        this.nmLocal = nmLocal;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public String getEndLocal() {
+        return endLocal;
     }
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    public void setEndLocal(String endLocal) {
+        this.endLocal = endLocal;
     }
 
     public String getLatitude() {
@@ -77,11 +77,11 @@ public class Local {
         this.tipo = tipo;
     }
 
-    public Long getIdUsuario() {
-        return idUsuario;
+    public Long getCdUsuario() {
+        return cdUsuario;
     }
 
-    public void setIdUsuario(Long idUsuario) {
-        this.idUsuario = idUsuario;
+    public void setCdUsuario(Long cdUsuario) {
+        this.cdUsuario = cdUsuario;
     }
 }
