@@ -11,7 +11,7 @@ import java.util.Optional;
 @Repository
 public interface LocalRepository extends JpaRepository<Local, Long> {
 
-    Optional<Local> findByCdLocal(Long cdLocal);
+    Optional<Local> findByCdLocalAndEndLocal(Long cdLocal, String endLocal);
 
     @Query("SELECT local "+
             "FROM Local local "+
@@ -21,5 +21,6 @@ public interface LocalRepository extends JpaRepository<Local, Long> {
     @Query("SELECT local "+
             "FROM Local local "+
             "WHERE local.cdUsuario = :cdUsuario")
+
     Optional<List<Local>> findByCdUsuario(Long cdUsuario);
 }
