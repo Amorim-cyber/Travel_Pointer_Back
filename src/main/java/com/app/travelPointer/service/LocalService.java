@@ -26,7 +26,7 @@ public class LocalService {
     @Transactional
     public LocalDTO save(LocalDTO dto){
 
-        Optional<Local> optionalLocal = localRepository.findByCdLocalAndEndLocal(dto.getCdLocal(), dto.getEndLocal());
+        Optional<Local> optionalLocal = localRepository.findByCdUsuarioAndEndLocal(dto.getCdUsuario(), dto.getEndLocal());
         if(optionalLocal.isPresent()){
             throw new BusinessException(MessageUtils.LOCAL_ALREADY_EXISTS);
         }
@@ -50,7 +50,7 @@ public class LocalService {
         Optional<Local> optionalLocal = localRepository.findByLocalUpdate(dto.getCdUsuario(), dto.getEndLocal(), dto.getCdLocal());
 
         if(optionalLocal.isPresent()){
-            throw new BusinessException(MessageUtils.LOCAL_ALREADY_EXISTS);
+            throw new BusinessException(MessageUtils.NO_RECORDS_FOUND);
         }
 
         Local local = localMapper.toEntity(dto);

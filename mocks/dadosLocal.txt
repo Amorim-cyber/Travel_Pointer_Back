@@ -1,0 +1,47 @@
+[
+  {
+    "cdLocal": 14024,
+    "nmLocal": "Barra Shopping",
+    "endLocal": "Av. das Américas, 4666",
+    "latitude": "-22.9985276",
+    "longitude": "-43.3593239",
+    "tipo": "shopping",
+    "cdUsuario": 2
+  },
+  {
+    "cdLocal": 14026,
+    "nmLocal": "Barra Shopping",
+    "endLocal": "Av. das Américas, 4666",
+    "latitude": "-22.9985276",
+    "longitude": "-43.3593239",
+    "tipo": "shopping",
+    "cdUsuario": 3
+  },
+  {
+    "cdLocal": 14025,
+    "nmLocal": "Casa do Alemão",
+    "endLocal": "Av. das Américas, 1699 - Loja C - Barra da Tijuca",
+    "latitude": "-23.0026433",
+    "longitude": "-43.3354061",
+    "tipo": "restaurante",
+    "cdUsuario": 2
+  },
+  {
+    "cdLocal": 14027,
+    "nmLocal": "Clube do Totó",
+    "endLocal": "Av. Djalma Ribeiro, s/n - Recreio dos Bandeirantes",
+    "latitude": "-23.0149732",
+    "longitude": "-43.442028",
+    "tipo": "parque",
+    "cdUsuario": 3
+  },
+  {
+    "cdLocal": 14028,
+    "nmLocal": "Praça Mozart Firmeza",
+    "endLocal": "Praça Mozart Firmeza - Recreio dos Bandeirantes",
+    "latitude": "-23.0180903",
+    "longitude": "-43.4575393",
+    "tipo": "parque",
+    "cdUsuario": 3
+  }
+]
