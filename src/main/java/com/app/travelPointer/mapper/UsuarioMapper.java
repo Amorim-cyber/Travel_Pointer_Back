@@ -2,10 +2,12 @@ package com.app.travelPointer.mapper;
 
 import com.app.travelPointer.model.Usuario;
 import com.app.travelPointer.model.dto.UsuarioDTO;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Component
 public class UsuarioMapper {
 
     public Usuario toEntity(UsuarioDTO dto) {
