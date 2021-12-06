@@ -11,12 +11,12 @@ import java.util.Optional;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
-    Optional<Usuario> findCdUsuarioAndLoginAndSenha(Long cdUsuario, String login, String senha);
+    Optional<Usuario> findByLoginAndSenha(String login, String senha);
 
     @Query("SELECT usuario "+
             "FROM Usuario usuario "+
-            "WHERE usuario.cdUsuario = :cdUsuario AND usuario.login = :login AND usuario.senha <> :senha ")
-    Optional<Local>findByUsuarioUpdate(Long cdUsuario, String login, String senha);
+            "WHERE usuario.cdUsuario <> :cdUsuario AND usuario.login = :login AND usuario.senha = :senha ")
+    Optional<Usuario>findByUsuarioUpdate(Long cdUsuario, String login, String senha);
 
     Optional<Usuario> findByLogin(String login);
 
