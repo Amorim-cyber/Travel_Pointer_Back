@@ -21,10 +21,10 @@ public class UsuarioMapper {
 
     public UsuarioDTO toDto(Usuario usuario) {
         UsuarioDTO dto = new UsuarioDTO();
-        dto.setCdUsuario(dto.getCdUsuario());
-        dto.setNmUsuario(dto.getNmUsuario());
-        dto.setLogin(dto.getLogin());
-        dto.setSenha(dto.getSenha());
+        dto.setCdUsuario(usuario.getCdUsuario());
+        dto.setNmUsuario(usuario.getNmUsuario());
+        dto.setLogin(usuario.getLogin());
+        dto.setSenha(usuario.getSenha());
         return dto;
     }
 
